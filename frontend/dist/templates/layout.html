@@ -1,0 +1,62 @@
+<div class="app-container d-flex">
+    <aside class="sidebar d-flex flex-column border border-end">
+        <div class="logo-container align-items-center d-flex justify-content-center">
+            <div class="logo"><img src="/images/logo.png" alt="logo"></div>
+        </div>
+
+        <nav class="sidebar-nav d-flex flex-column align-items-center">
+            <a href="/" class="nav-item active align-items-center d-flex text-decoration-none fw-medium">
+                <div class="nav-item-icon">
+                    <img src="/images/home.png" alt="home" class="normal-icon d-block">
+                    <img src="/images/home-active.png" alt="home" class="active-icon d-none">
+                </div>
+                <span>Главная</span>
+            </a>
+
+            <a href="/transactions" class="nav-item align-items-center d-flex text-decoration-none">
+                <div class="nav-item-icon">
+                    <img src="/images/money.png" alt="money" class="normal-icon d-block">
+                    <img src="/images/money-active.png" alt="money" class="active-icon d-none">
+                </div>
+                <span>Доходы & Расходы</span>
+            </a>
+
+            <div class="dropdown d-flex flex-column align-items-center">
+                <input type="checkbox" id="categories-toggle" class="dropdown-checkbox d-none">
+                <label for="categories-toggle" class="dropdown-header fw-medium justify-content-between d-flex align-items-center">
+                    <div class="dropdown-header-content d-flex align-items-center justify-content-between w-100">
+                        <span>Категории</span>
+                        <div class="arrow">
+                            <img src="/images/arrow.png" alt="arrow" class="arrow-icon">
+                        </div>
+                    </div>
+                </label>
+                <ul class="dropdown-list">
+                    <li><a href="/profit" class="nav-item align-items-center d-flex sub-item text-decoration-none" data-category="profit">Доходы</a></li>
+                    <li><a href="/costs" class="nav-item align-items-center d-flex sub-item text-decoration-none" data-category="costs">Расходы</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="balance-section d-flex align-items-center">
+            <div class="balance-label">Баланс: </div>
+            <div class="balance-amount" id="balance-amount">500$</div>
+        </div>
+
+        <div class="user-container d-flex align-items-center position-relative">
+            <div class="user-info d-flex align-items-center" id="userDropdown" style="cursor: pointer;">
+                <div class="user-icon d-flex align-items-center justify-content-center text-white">
+                    <img src="/images/icon.png" alt="icon">
+                </div>
+                <div class="user-name">Roman Chernov</div>
+            </div>
+            <ul class="user-dropdown-menu" id="userDropdownMenu" style="display: none;">
+                <li><a class="user-dropdown-item text-danger" href="/logout">Выйти</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div id="content-layout"></div>
+    </main>
+</div>

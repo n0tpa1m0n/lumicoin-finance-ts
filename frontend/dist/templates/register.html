@@ -1,0 +1,70 @@
+<div class="register-container vh-100 d-flex flex-column justify-content-center align-items-center">
+    <div class="logo mb-5">
+        <img src="/images/logo.png" alt="logo" class="img-fluid">
+    </div>
+
+    <form id="registerForm" class="w-100 needs-validation" style="max-width: 400px;" novalidate>
+        <h3 class="text-center fs-1 mb-4" style="color: #052C65; font-size: 40px !important;">Создайте аккаунт</h3>
+        <div id="common-error" class="error invalid-feedback text-center mb-3">
+            Не удалось зарегистрировать пользователя
+        </div>
+        <div class="input-group mb-2 has-validation">
+            <span class="input-group-text border-end-0" style="background-color: #E9ECEF">
+                <i class="fa fa-user text-secondary"></i>
+            </span>
+            <input class="form-control border-start-0" type="text" placeholder="Имя" name="name" id="name" required
+                   style="border-radius: 0 0.375rem 0.375rem 0;">
+            <span id="name-error" class="error invalid-feedback">Пожалуйста, введите ваше имя. </span>
+        </div>
+
+
+        <div class="input-group mb-2 has-validation">
+            <span class="input-group-text border-end-0" style="background-color: #E9ECEF">
+                <i class="fa fa-user text-secondary"></i>
+            </span>
+            <input class="form-control border-start-0" type="text" placeholder="Фамилия" id="last-name" required
+                   style="border-radius: 0 0.375rem 0.375rem 0;">
+            <span id="last-name-error" class="error invalid-feedback"> Пожалуйста, введите вашу фамилию.</span>
+
+        </div>
+
+
+        <div class="input-group mb-2 has-validation">
+            <span class="input-group-text border-end-0" style="background-color: #E9ECEF">
+                <i class="fa fa-envelope text-secondary"></i>
+            </span>
+            <input class="form-control border-start-0" type="email" placeholder="Электронная почта" id="email" required
+                   style="border-radius: 0 0.375rem 0.375rem 0;">
+
+                <span id="email-error" class="error invalid-feedback">Пожалуйста, введите корректный email адрес.</span>
+
+            </div>
+
+        <div class="input-group mb-2 has-validation">
+            <span class="input-group-text border-end-0" style="background-color: #E9ECEF">
+                <i class="fa fa-lock text-secondary"></i>
+            </span>
+            <input class="form-control border-start-0" type="password" placeholder="Пароль" id="password" required minlength="8"
+                   style="border-radius: 0 0.375rem 0.375rem 0;">
+            <span id="password-error" class="error invalid-feedback">Заполните пароль.</span>
+
+        </div>
+
+        <div class="input-group mb-3 has-validation">
+            <span class="input-group-text border-end-0" style="background-color: #E9ECEF">
+                <i class="fa fa-lock text-secondary"></i>
+            </span>
+            <input class="form-control border-start-0" type="password" placeholder="Подтверждение пароля" id="password-repeat" required
+                   style="border-radius: 0 0.375rem 0.375rem 0;">
+            <span id="repeat-password-error" class="error invalid-feedback">Пароли не совпдают.</span>
+
+        </div>
+
+        <button type="button" id="process-button" class="btn btn-primary w-100 mb-2" style="height: 38px; opacity: 0.9;">Зарегистрироваться</button>
+
+        <div class="verif-text d-flex justify-content-center align-items-center mt-3">
+            <p class="mb-0 me-2" style="font-size: 12px;">Уже есть аккаунт?</p>
+            <a href="/login" class="text-decoration-none" style="font-size: 12px; color: #0D6EFD;">Войдите в систему</a>
+        </div>
+    </form>
+</div>

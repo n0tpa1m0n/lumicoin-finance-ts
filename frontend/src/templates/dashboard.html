@@ -1,0 +1,29 @@
+<div class="content-wrapper">
+    <h2 class="page-title">Главная</h2>
+
+    <div class="buttons d-flex align-items-center">
+        <button class="btn-outline-secondary" id="button-today">Сегодня</button>
+        <button class="btn-outline-secondary" id="button-week">Неделя</button>
+        <button class="btn-outline-secondary" id="button-month">Месяц</button>
+        <button class="btn-outline-secondary" id="button-year">Год</button>
+        <button class="btn-outline-secondary" id="button-all">Все</button>
+        <button class="btn-outline-secondary" id="button-interval">Интервал</button>
+        <div class="date-range d-flex align-items-center">
+            <span>С <a href="#" class="date-link text-decoration-underline cursor-pointer" id="startDateLink">Дата</a></span>
+            <span>по <a href="#" class="date-link text-decoration-underline cursor-pointer" id="endDateLink">Дата</a></span>
+        </div>
+    </div>
+
+    <div class="charts d-flex text-center flex-wrap">
+        <div class="cont">
+            <div class="chart-container text-center">
+                <h2 class="charts-title">Доходы</h2>
+                <canvas id="canvas-inc"></canvas>
+            </div>
+        </div>
+        <div class="chart-container text-center">
+            <h2 class="charts-title">Расходы</h2>
+            <canvas id="canvas-exp"></canvas>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+body {
+  font-family: "Roboto Light", sans-serif;
+}
+
+.buttons {
+  margin-bottom: 140px;
+}
+
+.buttons button {
+  margin-right: 20px;
+  width: 100px;
+  height: 37px ;
+  padding: 6px 16px;
+  border: #6C757D 1px solid;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #6C757D;
+  background: none;
+}
+
+.buttons button.active {
+  background: #6C757D;
+  color: white;
+
+}
+button{
+  &:hover{
+    background: #6C757D;
+    color: white;
+  }
+}
+.charts {
+  gap: 84px; padding-left: 24px;
+}
+
+.chart-container {
+  width: 445px;
+}
+.cont{
+padding-right: 87px;
+  border-right: 1px #D9D9D9 solid;
+}
+.charts-title {
+  color: #290661;
+  margin-bottom: 20px;
+}
+
+canvas {
+  max-width: 100%;
+}
+.date-range {
+
+  gap: 5px;
+  font-size: 14px;
+}
+
+.date-link {
+  color: #6C757D;
+
+}
+.date-linkk {
+  color: #000000;
+
+}

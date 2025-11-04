@@ -1,0 +1,45 @@
+<div class="register-container vh-100 d-flex flex-column justify-content-center align-items-center">
+    <div class="logo mb-5">
+        <img src="/images/logo.png" alt="logo" class="img-fluid">
+    </div>
+
+    <form id="loginForm" class="w-100 needs-validation" style="max-width: 400px;" novalidate>
+        <h3 class="text-center fs-1 mb-4" style="color: #052C65; font-size: 40px !important;">Вход</h3>
+        <div id="common-error" class="error invalid-feedback text-center mb-3">
+            Неправильный email или пароль
+        </div>
+
+        <div class="input-group mb-3 has-validation">
+            <span class="input-group-text border-end-0" style="background-color: #E9ECEF">
+                <i class="fa fa-envelope text-secondary"></i>
+            </span>
+            <input class="form-control border-start-0" type="email" placeholder="Электронная почта" id="email" required
+                   style="border-radius: 0 0.375rem 0.375rem 0;">
+
+            <span id="email-error" class="error invalid-feedback">Введите корректный E-mail</span>
+        </div>
+
+        <div class="input-group mb-3 has-validation">
+            <span class="input-group-text border-end-0" style="background-color: #E9ECEF">
+                <i class="fa fa-lock text-secondary"></i>
+            </span>
+            <input class="form-control border-start-0" id="password" type="password" placeholder="Пароль" name="psw" required
+                   style="border-radius: 0 0.375rem 0.375rem 0;">
+            <span id="password-error" class="error invalid-feedback">Заполните пароль</span>
+
+        </div>
+
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="remember-me">
+            <label class="form-check-label fw-medium ms-2" for="remember-me">Запомнить меня</label>
+        </div>
+
+        <button type="button" id="process-button" class="btn btn-primary w-100 " style="opacity: 0.9; margin-bottom: 10px">Войти</button>
+
+        <div class="verif-text d-flex align-items-center justify-content-center">
+            <p class="mb-0 me-2" style="font-size: 12px;">Ещё нет аккаунта?</p>
+            <a href="/register" style="font-size: 12px; color: #0D6EFD;">Пройдите регистрацию</a>
+        </div>
+    </form>
+</div>
